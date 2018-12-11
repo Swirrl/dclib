@@ -236,6 +236,7 @@ public class Main {
                 return true;
             } catch (Exception e) {
                 System.err.println("Failed: " + e);
+                e.printStackTrace(System.err);
                 return false;
             }
         }
