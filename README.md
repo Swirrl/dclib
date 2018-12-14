@@ -9,4 +9,4 @@ Data Conversion library for generating RDF from reasonably formatted CSV files. 
 
 # Deployment 
 
-`mvn deploy` will deploy to `s3://swirrl-jars` (if you have the credentials)
+`mvn deploy` will deploy to `s3://swirrl-jars` using [AWS Maven](https://github.com/spring-projects/aws-maven)
