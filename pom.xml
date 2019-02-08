@@ -7,7 +7,7 @@
   <description>Data converter library</description>
 
   <scm>
-    <developerConnection>scm:git:ssh://git@github.com/epimorphics/dclib.git</developerConnection>
+    <developerConnection>scm:git:ssh://git@github.com/Swirrl/dclib.git</developerConnection>
     <tag>HEAD</tag>
   </scm>
 
@@ -46,7 +46,7 @@
       <name>Epimorphics Public Repository</name>
       <url>http://repository.epimorphics.com</url>
     </repository>
-    
+
   </repositories>
 
   <pluginRepositories>
@@ -74,7 +74,7 @@
       <artifactId>junit</artifactId>
       <version>4.12</version>
       <scope>test</scope>
-    </dependency> 
+    </dependency>
     <dependency>
       <groupId>com.epimorphics</groupId>
       <artifactId>appbase</artifactId>
@@ -99,7 +99,7 @@
       <groupId>org.yaml</groupId>
       <artifactId>snakeyaml</artifactId>
       <version>1.16</version>
-    </dependency>    
+    </dependency>
   </dependencies>
 
   <build>
@@ -128,7 +128,7 @@
         <artifactId>maven-release-plugin</artifactId>
         <version>2.5.2</version>
       </plugin>
-      
+
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-shade-plugin</artifactId>
@@ -144,7 +144,7 @@
               </excludes>
             </filter>
           </filters>
-    
+
           <transformers>
             <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
               <mainClass>com.epimorphics.dclib.Main</mainClass>
@@ -153,7 +153,7 @@
               <resource>log4j.properties</resource>
               <file>src/test/resources/log4j.properties</file>
             </transformer>
-            
+
           </transformers>
         </configuration>
         <executions>
@@ -169,7 +169,7 @@
           </execution>
         </executions>
       </plugin>
-      
+
     </plugins>
 
      <extensions>
@@ -206,11 +206,10 @@
               </pluginExecutions>
             </lifecycleMappingMetadata>
           </configuration>
-        </plugin>        
+        </plugin>
       </plugins>
     </pluginManagement>
   </build>
-  
     <distributionManagement>
         <repository>
             <id>swirrl-maven-s3-release-repo</id>
@@ -223,5 +222,4 @@
             <url>s3://swirrl-jars/snapshots</url>
         </snapshotRepository>
     </distributionManagement>
-
 </project>
